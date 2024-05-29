@@ -435,3 +435,90 @@ The img tag has been added right after the header section and before the main co
 The src attribute of the img tag is set to the URL of the image you provided.
 The alt attribute provides an alternative text for the image, which is useful for accessibility.
 This will display the specified image between the header and the main content sections of the webpage.
+
+why is the image not showing?
+ChatGPT
+If the image is not showing, there could be several reasons. One common reason could be related to mixed content issues if you're serving your site over HTTPS but the image is coming from an HTTP source. Another reason might be that the URL itself has some restrictions or is not properly linking to the image. Let's troubleshoot and ensure that the image is correctly embedded:
+
+Check the Image URL: Ensure the URL is correct and accessible. Open the URL in a separate tab to verify that the image loads.
+
+Mixed Content Issues: Ensure your site and the image URL both use the same protocol (either both HTTP or both HTTPS).
+
+Alternative Approach: Use a reliable image hosting service to ensure the image is always accessible.
+
+To ensure it's not a mixed content issue, here’s an alternative approach where the image is embedded directly:
+
+Adjusted HTML with a Reliable Image Hosting Link (index.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Importance of Fungal Model Systems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Importance of Fungal Model Systems</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#saccharomyces">Saccharomyces cerevisiae</a></li>
+                <li><a href="#schizosaccharomyces">Schizosaccharomyces pombe</a></li>
+                <li><a href="#ashbya">Ashbya gossypii</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <img src="https://via.placeholder.com/1200x300" alt="Fungal Model Systems">
+
+    <main class="container">
+        <section id="home">
+            <h2>Introduction</h2>
+            <article>
+                <h3>Overview</h3>
+                <p>Model organisms are essential in biological research...</p>
+            </article>
+        </section>
+
+        <div class="sections-container">
+            <section id="saccharomyces">
+                <h2>Saccharomyces cerevisiae</h2>
+                <article>
+                    <h3>The Brewer's Yeast</h3>
+                    <p>Saccharomyces cerevisiae has been pivotal in our understanding of genetics...</p>
+                </article>
+            </section>
+            
+            <section id="schizosaccharomyces">
+                <h2>Schizosaccharomyces pombe</h2>
+                <article>
+                    <h3>The Fission Yeast</h3>
+                    <p>Schizosaccharomyces pombe is a key model for studying the cell cycle...</p>
+                </article>
+            </section>
+            
+            <section id="ashbya">
+                <h2>Ashbya gossypii</h2>
+                <article>
+                    <h3>The Filamentous Fungus</h3>
+                    <p>Ashbya gossypii is unique in its morphology and genetic structure...</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 Fungal Research Group.</p>
+        <p>Contact: info@fungalresearch.com</p>
+    </footer>
+</body>
+</html>
+Explanation:
+Placeholder Image: I've used a placeholder image URL (https://via.placeholder.com/1200x300). This is a reliable way to check if the image loads correctly. You can replace this URL with your actual image link once verified.
+
+Image URL: Make sure the image URL is correct and accessible. If using a placeholder works, then the issue might be with the original image URL or accessibility.
+
+If you confirm that the original URL is correct and accessible but still not displaying, try using an HTTPS version of the URL, or host the image on a reliable image hosting service that supports HTTPS.
