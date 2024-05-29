@@ -522,3 +522,9 @@ Placeholder Image: I've used a placeholder image URL (https://via.placeholder.co
 Image URL: Make sure the image URL is correct and accessible. If using a placeholder works, then the issue might be with the original image URL or accessibility.
 
 If you confirm that the original URL is correct and accessible but still not displaying, try using an HTTPS version of the URL, or host the image on a reliable image hosting service that supports HTTPS.
+
+
+
+Manually replaced the stock placeholder image with an image url copied from duckduckgo
+
+replaced placeholder image with img url
